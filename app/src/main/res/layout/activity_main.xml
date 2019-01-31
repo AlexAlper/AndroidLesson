@@ -17,6 +17,8 @@
         android:gravity="center"
         >
 
+
+
     <CheckBox android:id="@+id/checkbox_wind"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -39,21 +41,27 @@
 
             />
 
+        <Button
+            android:gravity="bottom"
+            android:id="@+id/buttonTransition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/show"
+            android:layout_alignBottom = "@id/checkbox_humidity"
 
+
+            />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            >
+
+        </ListView>
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="100"
-        android:orientation="vertical"
-        android:gravity="clip_vertical"
-        >
-    <Button
-        android:id="@+id/buttonTransition"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/show"
-        android:gravity="center_horizontal"
-        />
-    </LinearLayout>
+
+
+
 </android.support.constraint.ConstraintLayout>

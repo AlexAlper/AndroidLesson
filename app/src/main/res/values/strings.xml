@@ -4,4 +4,10 @@
     <string name="pressure">Давление</string>
     <string name="show">Показать</string>
     <string name="humidity">Влажность</string>
+    <string-array name="city_names">
+        <item>Moscow</item>
+        <item>Rostov-on-Don</item>
+        <item>Saint Petersburg</item>
+        <item>Novosibirsk</item>
+    </string-array>
 </resources>
