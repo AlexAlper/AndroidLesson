@@ -91,11 +91,14 @@
 
     <Button
         android:gravity="bottom"
-        android:id="@+id/buttonTransition"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/show"
         android:layout_alignBottom = "@id/checkbox_humidity"
+        android:onClick="onClick"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="6dp"
         />
 </LinearLayout>
 
