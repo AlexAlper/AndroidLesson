@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Погода</string>
+    <string name="wind">Сила ветра</string>
+    <string name="pressure">Давление</string>
+    <string name="show">Показать</string>
+    <string name="humidity">Влажность</string>
+    <string name="city">Выбранный город</string>
+    <string name="to_back">Назад</string>
+    <string-array name="city_names">
+        <item>Moscow</item>
+        <item>Rostov-on-Don</item>
+        <item>Saint Petersburg</item>
+        <item>Novosibirsk</item>
+    </string-array>
 </resources>
