@@ -100,6 +100,13 @@
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="6dp"
         />
+
 </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="300dp"
+            android:src="@drawable/sun"/>
 
 </android.support.constraint.ConstraintLayout>

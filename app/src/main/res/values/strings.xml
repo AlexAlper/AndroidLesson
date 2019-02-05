@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">Погода</string>
-    <string name="wind">Сила ветра</string>
-    <string name="pressure">Давление</string>
-    <string name="show">Показать</string>
-    <string name="humidity">Влажность</string>
+    <string name="wind">Wind</string>
+    <string name="pressure">Pressure</string>
+    <string name="show">Show</string>
+    <string name="humidity">humidity</string>
     <string name="city">Выбранный город</string>
-    <string name="to_back">Назад</string>
+    <string name="to_back">Back</string>
     <string-array name="city_names">
         <item>Moscow</item>
         <item>Rostov-on-Don</item>
