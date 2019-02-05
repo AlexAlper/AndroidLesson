@@ -9,38 +9,43 @@
 
 
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="100"
+        android:weightSum="10"
         android:orientation="vertical"
         android:gravity="center"
-        android:layout_marginTop="50dp"
+
 
         >
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            >
 
-     <TextView
-         android:id="@+id/cirt_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+            <TextView
+                android:id="@+id/cirt_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="200dp"
+                android:gravity="center"
+                android:textSize="@dimen/normal_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </LinearLayout>
 
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-         android:textSize="22dp"
-         />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center"
-            android:layout_marginStart="20dp"
-            android:layout_marginBottom="300dp"
-
+            android:layout_weight="2"
             >
             <TextView
                 android:id="@+id/wind"
@@ -48,6 +53,8 @@
                 android:layout_height="match_parent"
                 android:text="@string/wind"
                 android:layout_marginEnd="100dp"
+                android:layout_marginBottom="400dp"
+
                 />
 
             <TextView
@@ -55,30 +62,70 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="100dp"
+                android:layout_marginBottom="400dp"
 
                 />
 
+            <TextView
+                android:id="@+id/pressure"
+                android:layout_width="251dp"
+                android:layout_height="281dp"
+                android:text="@string/pressure"
+                android:layout_alignStart="@id/wind"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="300dp"
+                />
+
+            <TextView
+                android:id="@+id/pressureText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@id/windText"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="300dp"
+                />
+
+            <TextView
+                android:id="@+id/humidity"
+                android:layout_width="251dp"
+                android:layout_height="281dp"
+                android:text="@string/humidity"
+                android:layout_alignStart="@id/pressure"
+                android:layout_marginTop="200dp"
+                android:layout_marginBottom="200dp"
+                />
+
+            <TextView
+                android:id="@+id/humidityText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignStart="@id/pressureText"
+                android:layout_marginTop="200dp"
+                android:layout_marginBottom="200dp"
+                />
         </RelativeLayout>
 
-    </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
+        android:layout_weight="2"
+
         >
 
         <Button
             android:id="@+id/buttonBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/to_back"
-            android:onClick="onClick"
             android:layout_gravity="center"
+            android:onClick="onClick"
+            android:layout_marginBottom="150dp"
+            android:layout_marginStart="150dp"
+            android:text="@string/to_back"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="6dp" />
 
     </LinearLayout>
-
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
